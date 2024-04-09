@@ -19,7 +19,7 @@ def get_dls(params):
     if not hasattr(params,'use_time_features'): params.use_time_features = False
 
     if params.dset == 'ettm1':
-        root_path = '/kaggle/input/etth1-zip/'
+        root_path = '/kaggle/input/dsetettm1/'
         size = [params.context_points, 0, params.target_points]
         dls = DataLoaders(
                 datasetCls=Dataset_ETT_minute,
@@ -54,7 +54,7 @@ def get_dls(params):
                 )
 
     elif params.dset == 'etth1':
-        root_path = '/kaggle/input/etth1'
+        root_path = '/kaggle/input/dsetetth1'
         size = [params.context_points, 0, params.target_points]
         dls = DataLoaders(
                 datasetCls=Dataset_ETT_hour,
