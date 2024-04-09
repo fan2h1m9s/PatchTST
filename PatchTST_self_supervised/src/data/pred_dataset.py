@@ -14,7 +14,7 @@ warnings.filterwarnings('ignore')
 
 class Dataset_ETT_hour(Dataset):
     def __init__(self, root_path, split='train', size=None,
-                 features='S', data_path='ETTh1.csv',
+                 features='S', data_path='/kaggle/input/etth1-zip/ETTh1.csv',
                  target='OT', scale=True, timeenc=0, freq='h',
                  use_time_features=False
                  ):
